@@ -14,7 +14,7 @@ def loose_change(cents):
         else:
             i += 1
 
-    change_dict = dict.fromkeys(["Nickels", "Pennies", "Dimes", "Quarters"], 0)
+    change_dict = dict.fromkeys(KeysValues.keys(), 0)
     for value in KeysValues: 
         for changeValue in change: 
             if KeysValues[value] == changeValue:
